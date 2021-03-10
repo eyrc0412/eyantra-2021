@@ -1,0 +1,1414 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Learning modules include Robotic Manipulation, Robotic Perception, ROS, IoT, Google App Scripting, Python and Javascript">
+      
+      
+      
+        <meta name="author" content="Vimal_vb_0412">
+      
+      
+        <link rel="canonical" href="https://vimal/ros_iot/">
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>pkg_ros_iot_bridge - Vargi-Bot</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fa8597d9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e03a20ad.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto",;--md-code-font-family:"Roboto mono",}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","None","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}});"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  
+  
+    
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vargi-Bot - pkg_ros_iot_bridge">
+  <meta property="og:description" content="Learning modules include Robotic Manipulation, Robotic Perception, ROS, IoT, Google App Scripting, Python and Javascript">
+  <meta property="og:url" content="https://vimal/ros_iot/">
+  <meta property="og:image" content="https://vimalassets/images/banner.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1080">
+  <meta property="og:image:height" content="568">
+  <link rel="stylesheet" href="../overrides/assets/stylesheets/main.01a7853e.min.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pkg_ros_iot_bridge" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://vimal" title="Vargi-Bot" class="md-header-nav__button md-logo" aria-label="Vargi-Bot">
+      
+  
+  <?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1202.000000pt" height="1314.000000pt" viewBox="0 0 1202.000000 1314.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,1314.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M7500 13129 c-443 -4 -1187 -12 -1655 -18 -467 -6 -1408 -13 -2090
+-16 -1258 -6 -1620 -14 -1935 -41 -757 -64 -1171 -244 -1420 -615 -242 -362
+-350 -887 -390 -1889 -14 -356 -12 -1667 5 -2710 25 -1573 38 -3168 32 -3985
+-9 -1120 6 -1776 48 -2170 122 -1132 532 -1509 1770 -1629 330 -33 479 -38
+1221 -43 521 -4 1109 0 1865 12 1329 22 3068 26 3374 8 1051 -61 1773 -30
+2275 97 583 148 973 434 1174 861 52 111 146 373 177 491 25 98 50 280 40 290
+-4 4 -1768 9 -3921 11 -3628 3 -3924 4 -4039 20 -603 83 -1020 287 -1408 691
+-323 334 -497 709 -557 1196 -36 288 -37 434 -34 2965 3 2313 5 2500 21 2625
+47 356 119 608 242 850 106 206 212 347 391 519 339 326 777 504 1444 588 135
+17 264 18 1875 18 1900 0 1831 2 2145 -61 667 -133 1140 -474 1400 -1009 130
+-267 203 -534 256 -935 14 -105 17 -256 21 -925 l4 -800 -3078 -1266 -3078
+-1265 0 -300 c0 -309 7 -391 46 -549 84 -334 397 -617 789 -711 72 -18 245
+-19 3781 -21 l3706 -3 9 902 c11 1052 10 1172 -3 4578 l-10 2585 -25 115 c-38
+172 -78 281 -192 521 -119 250 -177 341 -296 459 -237 237 -586 380 -1131 464
+-569 87 -1191 108 -2849 95z"/>
+<path d="M4845 9633 c-203 -18 -454 -82 -604 -153 -123 -59 -204 -116 -288
+-201 -173 -176 -262 -373 -292 -642 -13 -111 -16 -2067 -3 -2067 4 0 1022 420
+2262 933 l2255 933 3 108 c5 197 -38 426 -105 561 -57 114 -176 249 -283 322
+-150 102 -366 174 -610 203 -78 9 -2235 12 -2335 3z"/>
+</g>
+</svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Vargi-Bot
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              pkg_ros_iot_bridge
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/Vimal9900/Docs-learning/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vimal9900/Docs-learning
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../Intro/" class="md-tabs__link">
+      Introduction
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Implement/" class="md-tabs__link">
+        Implemetation
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../task5/" class="md-tabs__link md-tabs__link--active">
+        API Docs
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../reference/" class="md-tabs__link">
+      Reference
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://vimal" title="Vargi-Bot" class="md-nav__button md-logo" aria-label="Vargi-Bot">
+      
+  
+  <?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1202.000000pt" height="1314.000000pt" viewBox="0 0 1202.000000 1314.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,1314.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M7500 13129 c-443 -4 -1187 -12 -1655 -18 -467 -6 -1408 -13 -2090
+-16 -1258 -6 -1620 -14 -1935 -41 -757 -64 -1171 -244 -1420 -615 -242 -362
+-350 -887 -390 -1889 -14 -356 -12 -1667 5 -2710 25 -1573 38 -3168 32 -3985
+-9 -1120 6 -1776 48 -2170 122 -1132 532 -1509 1770 -1629 330 -33 479 -38
+1221 -43 521 -4 1109 0 1865 12 1329 22 3068 26 3374 8 1051 -61 1773 -30
+2275 97 583 148 973 434 1174 861 52 111 146 373 177 491 25 98 50 280 40 290
+-4 4 -1768 9 -3921 11 -3628 3 -3924 4 -4039 20 -603 83 -1020 287 -1408 691
+-323 334 -497 709 -557 1196 -36 288 -37 434 -34 2965 3 2313 5 2500 21 2625
+47 356 119 608 242 850 106 206 212 347 391 519 339 326 777 504 1444 588 135
+17 264 18 1875 18 1900 0 1831 2 2145 -61 667 -133 1140 -474 1400 -1009 130
+-267 203 -534 256 -935 14 -105 17 -256 21 -925 l4 -800 -3078 -1266 -3078
+-1265 0 -300 c0 -309 7 -391 46 -549 84 -334 397 -617 789 -711 72 -18 245
+-19 3781 -21 l3706 -3 9 902 c11 1052 10 1172 -3 4578 l-10 2585 -25 115 c-38
+172 -78 281 -192 521 -119 250 -177 341 -296 459 -237 237 -586 380 -1131 464
+-569 87 -1191 108 -2849 95z"/>
+<path d="M4845 9633 c-203 -18 -454 -82 -604 -153 -123 -59 -204 -116 -288
+-201 -173 -176 -262 -373 -292 -642 -13 -111 -16 -2067 -3 -2067 4 0 1022 420
+2262 933 l2255 933 3 108 c5 197 -38 426 -105 561 -57 114 -176 249 -283 322
+-150 102 -366 174 -610 203 -78 9 -2235 12 -2335 3z"/>
+</g>
+</svg>
+
+    </a>
+    Vargi-Bot
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/Vimal9900/Docs-learning/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Vimal9900/Docs-learning
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        Implemetation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Implemetation" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          Implemetation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Implement/" class="md-nav__link">
+        Task5 Implementation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../graph/" class="md-nav__link">
+        Rqt-Graph
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
+        API Docs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API Docs" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          API Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
+      
+      <label class="md-nav__link" for="nav-4-1">
+        API pkgs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API pkgs" data-md-level="2">
+        <label class="md-nav__title" for="nav-4-1">
+          <span class="md-nav__icon md-icon"></span>
+          API pkgs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task5/" class="md-nav__link">
+        pkg_task5
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          pkg_ros_iot_bridge
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        pkg_ros_iot_bridge
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#node_action_server_ros_iot_bridgepy" class="md-nav__link">
+    node_action_server_ros_iot_bridge.py
+  </a>
+  
+    <nav class="md-nav" aria-label="node_action_server_ros_iot_bridge.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-iotrosbridgeactionserver" class="md-nav__link">
+    class IotRosBridgeActionServer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#__-init-__self" class="md-nav__link">
+    __ init __(self):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mqtt_sub_callbackself-client-userdata-message" class="md-nav__link">
+    mqtt_sub_callback(self, client, userdata, message):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_qr_dataself-arg_image" class="md-nav__link">
+    get_qr_data(self, arg_image):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera_1_callbackself-data" class="md-nav__link">
+    camera_1_callback(self, data):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispatch_ordersself-data" class="md-nav__link">
+    dispatch_orders(self, data):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shipped_ordersself-data" class="md-nav__link">
+    shipped_orders(self, data):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    main()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" >
+      
+      <label class="md-nav__link" for="nav-4-2">
+        Other files
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Other files" data-md-level="2">
+        <label class="md-nav__title" for="nav-4-2">
+          <span class="md-nav__icon md-icon"></span>
+          Other files
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../msg/" class="md-nav__link">
+        msg file
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yaml/" class="md-nav__link">
+        yaml file
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../config/" class="md-nav__link">
+        config file
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        Reference
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#node_action_server_ros_iot_bridgepy" class="md-nav__link">
+    node_action_server_ros_iot_bridge.py
+  </a>
+  
+    <nav class="md-nav" aria-label="node_action_server_ros_iot_bridge.py">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#class-iotrosbridgeactionserver" class="md-nav__link">
+    class IotRosBridgeActionServer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#__-init-__self" class="md-nav__link">
+    __ init __(self):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mqtt_sub_callbackself-client-userdata-message" class="md-nav__link">
+    mqtt_sub_callback(self, client, userdata, message):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_qr_dataself-arg_image" class="md-nav__link">
+    get_qr_data(self, arg_image):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#camera_1_callbackself-data" class="md-nav__link">
+    camera_1_callback(self, data):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dispatch_ordersself-data" class="md-nav__link">
+    dispatch_orders(self, data):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shipped_ordersself-data" class="md-nav__link">
+    shipped_orders(self, data):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    main()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+                  <a href="https://github.com/Vimal9900/Docs-learning/edit/master/docs/ros_iot.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="pkg_ros_iot_bridge">Pkg_ros_iot_bridge<a class="headerlink" href="#pkg_ros_iot_bridge" title="Permanent link">&para;</a></h1>
+<p>This package contains only one ros node <code>node_action_server_ros_iot_bridge.py</code></p>
+<h2 id="node_action_server_ros_iot_bridgepy"><strong>node_action_server_ros_iot_bridge.py</strong><a class="headerlink" href="#node_action_server_ros_iot_bridgepy" title="Permanent link">&para;</a></h2>
+<h3 id="class-iotrosbridgeactionserver"><strong>class IotRosBridgeActionServer</strong><a class="headerlink" href="#class-iotrosbridgeactionserver" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>This is the class to update various spreadsheet in Master Spread Sheet.
+</code></pre></div>
+<h3 id="__-init-__self">__ <strong>init</strong> __(self):<a class="headerlink" href="#__-init-__self" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>The constructor for IotRosBridgeActionServer class.
+</code></pre></div>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code># Initialize the Action Server
+# Read and Store IoT Configuration data from Parameter Server
+param_online_order_config = rospy.get_param(&#39;online_order_config&#39;)
+self._mqtt_server_url = param_online_order_config[&#39;mqtt_server_url&#39;]
+self._mqtt_server_port = param_online_order_config[&#39;mqtt_server_port&#39;]
+self._mqtt_qos = param_online_order_config[&#39;mqtt_qos&#39;]
+self._mqtt_unique_id = param_online_order_config[&#39;mqtt_unique_id&#39;]
+self._mqtt_sub_topic = &quot;/eyrc/vb/&quot; + self._mqtt_unique_id + &quot;/orders&quot;
+self._config_mqtt_sub_cb_ros_topic = &quot;/ros_iot_bridge/mqtt/sub&quot;
+rospy.loginfo(param_online_order_config)
+self.url_me = &quot;https://script.google.com/macros/s/AKfycbwCfFzS9d_fUZubwlYXbI2MKtzrR50P2PSHROhCgHRA1wIXVuwwFRNBPw/exec&quot;
+self.team_id = &quot;VB_0412&quot;
+self.unique_id = &quot;VsMyPsSr&quot;
+self.bridge = CvBridge()
+ret = iot.mqtt_subscribe_thread_start(self.mqtt_sub_callback,self._mqtt_server_url, self._mqtt_server_port,self._mqtt_sub_topic, self._mqtt_qos)
+if ret == 0:
+    rospy.loginfo(&quot;MQTT Subscribe Thread Started&quot;)
+else:
+    rospy.logerr(&quot;Failed to start MQTT Subscribe Thread&quot;)
+self._handle_ros_pub =\
+rospy.Publisher(self._config_mqtt_sub_cb_ros_topic, msgMqttSub, queue_size=10)
+</code></pre></div>
+</div>
+</div>
+<h3 id="mqtt_sub_callbackself-client-userdata-message">mqtt_sub_callback(self, client, userdata, message):<a class="headerlink" href="#mqtt_sub_callbackself-client-userdata-message" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>The callback function for MQTT Subscriptions and updating the Incoming Order
+Spread Sheet.
+</code></pre></div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>payload = str(message.payload.decode(&quot;utf-8&quot;))
+print(client, userdata)
+print &#39;[MQTT SUB CB] Message: &#39;, payload
+print &#39;[MQTT SUB CB] Topic: &#39;, message.topic
+goal_message = (payload.split(&quot;, &quot;))
+
+if (goal_message[5])[9:len(goal_message[5])-1] == &#39;Clothes&#39;:
+
+    parameters_me = {&quot;id&quot;:&quot;IncomingOrders&quot;,&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\&quot;Order Date and Time&quot;:(goal_message[1])[15:len(goal_message[1])-1],\&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],&quot;Order Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],&quot;Longitude&quot;:(goal_message[3])[8:len(goal_message[3])-1],&quot;Latitude&quot;:(goal_message[6])[8:len(goal_message[6])-2],&quot;Cost&quot;:250, &quot;Priority&quot;:&#39;MP&#39;}
+    # Inventory spreadsheet is getting updated
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+elif (goal_message[5])[9:len(goal_message[5])-1] == &#39;Medicine&#39;:
+
+    parameters_me = {&quot;id&quot;:&quot;IncomingOrders&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Order Date and Time&quot;:(goal_message[1])[15:len(goal_message[1])-1],\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1], \
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Order Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1], \
+&quot;Longitude&quot;:(goal_message[3])[8:len(goal_message[3])-1],\
+&quot;Latitude&quot;:(goal_message[6])[8:len(goal_message[6])-2],\
+&quot;Cost&quot;:450, &quot;Priority&quot;:&#39;HP&#39;}
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+elif (goal_message[5])[9:len(goal_message[5])-1] == &#39;Food&#39;:
+
+    parameters_me = {&quot;id&quot;:&quot;IncomingOrders&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Order Date and Time&quot;:(goal_message[1])[15:len(goal_message[1])-1],\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Order Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Longitude&quot;:(goal_message[3])[8:len(goal_message[3])-1],\
+&quot;Latitude&quot;:(goal_message[6])[8:len(goal_message[6])-2],\
+&quot;Cost&quot;:150, &quot;Priority&quot;:&#39;LP&#39;}
+        response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+msg_mqtt_sub = msgMqttSub()
+msg_mqtt_sub.timestamp = rospy.Time.now()
+msg_mqtt_sub.topic = message.topic
+msg_mqtt_sub.message = str(payload)
+self._handle_ros_pub.publish(msg_mqtt_sub)
+</code></pre></div>
+</div>
+</div>
+<h3 id="get_qr_dataself-arg_image">get_qr_data(self, arg_image):<a class="headerlink" href="#get_qr_dataself-arg_image" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Function to decode the image for various packages and updating the Inventory
+ Spread Sheet.
+
+Parameters:
+        arg_image: Raw image to be decoded.
+</code></pre></div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>qr_result = decode(arg_image)
+times_green = int(time.time())
+value = datetime.datetime.fromtimestamp(times_green)
+str_m = value.strftime(&#39;%m&#39;)
+str_y = value.strftime(&#39;%Y&#39;)
+str_time = str_m + str_y[2:]
+# List of tuple containing the position on shelf and the color(encoded)
+box_color = []
+for i in qr_result:
+    x_a, y_a, h_a, w_a = i.rect
+    # Apending the tuple on the basis of pixel values in box_color
+    if (x_a &gt; 100 and x_a &lt; 200) and (y_a &gt; 250 and y_a &lt; 400):
+        box_color.append((&#39;R0 C0&#39;, i.data))
+    if (x_a &gt; 250 and x_a &lt; 400) and (y_a &gt; 250 and y_a &lt; 400):
+        box_color.append((&#39;R0 C1&#39;, i.data))
+    if (x_a &gt; 400 and x_a &lt; 600) and (y_a &gt; 250 and y_a &lt; 400):
+        box_color.append((&#39;R0 C2&#39;, i.data))
+    if (x_a &gt; 100 and x_a &lt; 200) and (y_a &gt; 400 and y_a &lt; 550):
+        box_color.append((&#39;R1 C0&#39;, i.data))
+    if (x_a &gt; 250 and x_a &lt; 400) and (y_a &gt; 400 and y_a &lt; 550):
+        box_color.append((&#39;R1 C1&#39;, i.data))
+    if (x_a &gt; 400 and x_a &lt; 550) and (y_a &gt; 400 and y_a &lt; 550):
+        box_color.append((&#39;R1 C2&#39;, i.data))
+    if (x_a &gt; 100 and x_a &lt; 200) and (y_a &gt; 550 and y_a &lt; 670):
+        box_color.append((&#39;R2 C0&#39;, i.data))
+    if (x_a &gt; 250 and x_a &lt; 400) and (y_a &gt; 550 and y_a &lt; 670):
+        box_color.append((&#39;R2 C1&#39;, i.data))
+    if (x_a &gt; 400 and x_a &lt; 550) and (y_a &gt; 550 and y_a &lt; 670):
+        box_color.append((&#39;R2 C2&#39;, i.data))
+    if (x_a &gt; 100 and x_a &lt; 200) and (y_a &gt; 670 and y_a &lt; 850):
+        box_color.append((&#39;R3 C0&#39;, i.data))
+    if (x_a &gt; 250 and x_a &lt; 400) and (y_a &gt; 670 and y_a &lt; 850):
+        box_color.append((&#39;R3 C1&#39;, i.data))
+    if (x_a &gt; 400 and x_a &lt; 550) and (y_a &gt; 670 and y_a &lt; 850):
+        box_color.append((&#39;R3 C2&#39;, i.data))
+if len(qr_result) &gt; 0:
+    # Unsubscribing ros topic &quot;/eyrc/vb/camera_1/image_raw&quot;
+    SUB_ONCE.unregister()
+    list_a = box_color
+    print(w_a, h_a)
+else:
+    return &#39;NA&#39;
+pkg_clr = &#39;&#39;
+print list_a
+for i in list_a:
+    pkg_n, pkg_clr = i #unpaking tuple into pkg name and pkg color
+    rospy.sleep(1)
+    if pkg_clr == &#39;red&#39;:
+
+        if pkg_n == &#39;R0 C0&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R00&#39;+str_time, &quot;Items&quot;:&#39;Medicines&#39;,\
+&quot;Priority&quot;:&#39;HP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:450, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R1 C2&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R12&#39;+str_time, &quot;Items&quot;:&#39;Medicines&#39;,\
+&quot;Priority&quot;:&#39;HP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:450, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R2 C1&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R21&#39;+str_time, &quot;Items&quot;:&#39;Medicines&#39;,\
+&quot;Priority&quot;:&#39;HP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:450, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+        elif pkg_n == &#39;R3 C2&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R30&#39;+str_time, &quot;Items&quot;:&#39;Medicines&#39;,\
+&quot;Priority&quot;:&#39;HP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:450, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+    elif pkg_clr == &#39;yellow&#39;:
+
+        if pkg_n == &#39;R3 C0&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R02&#39;+str_time, &quot;Items&quot;:&#39;Food&#39;,\
+&quot;Priority&quot;:&#39;MP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:250, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R2 C2&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R11&#39;+str_time, &quot;Items&quot;:&#39;Food&#39;,\
+&quot;Priority&quot;:&#39;MP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:250, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R1 C1&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R20&#39;+str_time, &quot;Items&quot;:&#39;Food&#39;,\
+&quot;Priority&quot;:&#39;MP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:250, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+        elif pkg_n == &#39;R0 C1&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R31&#39;+str_time, &quot;Items&quot;:&#39;Food&#39;,\
+&quot;Priority&quot;:&#39;MP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:250, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+    elif pkg_clr == &#39;green&#39;:
+
+        if pkg_n == &#39;R0 C2&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R01&#39;+str_time, &quot;Items&quot;:&#39;Clothes&#39;,\
+&quot;Priority&quot;:&#39;LP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:150, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R1 C0&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R10&#39;+str_time, &quot;Items&quot;:&#39;Clothes&#39;,\
+&quot;Priority&quot;:&#39;LP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:150, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R2 C0&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R22&#39;+str_time, &quot;Items&quot;:&#39;Clothes&#39;,\
+&quot;Priority&quot;:&#39;LP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:150, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+
+        elif pkg_n == &#39;R3 C1&#39;:
+            parameters_me = {&quot;id&quot;:&quot;Inventory&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;SKU&quot;:&#39;R32&#39;+str_time, &quot;Items&quot;:&#39;Clothes&#39;,\
+&quot;Priority&quot;:&#39;LP&#39;, &quot;Storage Number&quot;:pkg_n,\
+&quot;Cost&quot;:150, &quot;Quantity&quot;:1}
+            response_me = requests.get(self.url_me, params=parameters_me)
+            print response_me.content
+SUB_ONCE.unregister()
+</code></pre></div>
+</div>
+</div>
+<h3 id="camera_1_callbackself-data">camera_1_callback(self, data):<a class="headerlink" href="#camera_1_callbackself-data" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>The callback function for 2D Camera topic.
+
+Parameters:
+       data: Message publishing on this topic
+</code></pre></div>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>try:
+    cv_image = self.bridge.imgmsg_to_cv2(data, &quot;bgr8&quot;)
+
+except CvBridgeError as err_or:
+    rospy.logerr(err_or)
+image = cv_image
+#applying threshold to get clear image for decoding
+retval, image = cv2.threshold(image, 15, 200, cv2.THRESH_BINARY)
+# Resize a 720x1280 image to 360x640 to fit it on the screen
+resized_image = cv2.resize(image, (720/2, 1280/2))
+
+cv2.imshow(&quot;/eyrc/vb/camera_1/image_raw&quot;, resized_image)
+rospy.loginfo(self.get_qr_data(image))
+
+cv2.waitKey(3)
+</code></pre></div>
+</div>
+</div>
+<h3 id="dispatch_ordersself-data">dispatch_orders(self, data):<a class="headerlink" href="#dispatch_ordersself-data" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Callback function of &quot;/eyrc/vb/VsMyPsSr/spreadsheet/ordersdispatch&quot; this ros
+ topic.
+
+Parameters:
+        data: Message publishing on this topic
+</code></pre></div>
+</div>
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>time_dispatch = data.time
+order_list = data.message #Retrieving information
+goal_message = (order_list.split(&quot;, &quot;)) #Spliting data for further use
+
+if (goal_message[5])[9:len(goal_message[5])-1] == &#39;Clothes&#39;:
+    parameters_me = {&quot;id&quot;:&quot;OrdersDispatch&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Order Date and Time&quot;:(goal_message[1])[15:len(goal_message[1])-1],\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Dispatch Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Cost&quot;:250, &quot;Priority&quot;:&#39;MP&#39;, &quot;Dispatch Date and Time&quot;:time_dispatch,\
+&quot;Dispatch Status&quot;:&#39;YES&#39;}
+    # Updating the Order Dispatch Spread Sheet
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+elif (goal_message[5])[9:len(goal_message[5])-1] == &#39;Medicine&#39;:
+    parameters_me = {&quot;id&quot;:&quot;OrdersDispatch&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Order Date and Time&quot;:(goal_message[1])[15:len(goal_message[1])-1],\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Dispatch Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Cost&quot;:450, &quot;Priority&quot;:&#39;HP&#39;, &quot;Dispatch Date and Time&quot;:time_dispatch,\
+&quot;Dispatch Status&quot;:&#39;YES&#39;}
+    # Updating the Order Dispatch Spread Sheet
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+elif (goal_message[5])[9:len(goal_message[5])-1] == &#39;Food&#39;:
+    parameters_me = {&quot;id&quot;:&quot;OrdersDispatch&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Order Date and Time&quot;:(goal_message[1])[15:len(goal_message[1])-1],\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Dispatch Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Cost&quot;:150, &quot;Priority&quot;:&#39;LP&#39;, &quot;Dispatch Date and Time&quot;:time_dispatch,\
+&quot;Dispatch Status&quot;:&#39;YES&#39;}
+    # Updating the Order Dispatch Spread Sheet
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+</code></pre></div>
+</div>
+</div>
+<h3 id="shipped_ordersself-data">shipped_orders(self, data):<a class="headerlink" href="#shipped_ordersself-data" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><label for="__tabbed_6_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>Callback function of &quot;/eyrc/vb/VsMyPsSr/spreadsheet/ordershipped&quot;
+ this ros topic.
+
+Parameters:
+        data: Message publishing on this topic
+</code></pre></div>
+</div>
+<input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><label for="__tabbed_6_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>time_shipped = data.time_shipped
+order_list = data.message #Retrieving information
+goal_message = (order_list.split(&quot;, &quot;)) #spliting data
+print((goal_message[2])[13:len(goal_message[2])-1], data.sim_time)
+
+if (goal_message[5])[9:len(goal_message[5])-1] == &#39;Clothes&#39;:
+    time_red = int(time.time()) +  3*84600
+    value = datetime.datetime.fromtimestamp(time_red)
+    str_time = value.strftime(&#39;%Y-%m-%d&#39;)
+    parameters_me = {&quot;id&quot;:&quot;OrdersShipped&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Shipped Date and Time&quot;:time_shipped,\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Shipped Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Cost&quot;:250, &quot;Priority&quot;:&#39;MP&#39;, &quot;Shipped Status&quot;:&#39;YES&#39;,\
+&quot;Estimated Time of Delivery&quot;: str_time}
+    # Updating the Order Shipped Spread Sheet
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+elif (goal_message[5])[9:len(goal_message[5])-1] == &#39;Medicine&#39;:
+    times_yellow = int(time.time()) +84600
+    value = datetime.datetime.fromtimestamp(times_yellow)
+    str_time = value.strftime(&#39;%Y-%m-%d&#39;)
+    parameters_me = {&quot;id&quot;:&quot;OrdersShipped&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Shipped Date and Time&quot;:time_shipped,\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Shipped Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Cost&quot;:450, &quot;Priority&quot;:&#39;HP&#39;, &quot;Shipped Status&quot;:&#39;YES&#39;,\
+&quot;Estimated Time of Delivery&quot;: str_time}
+    # Updating the Order Shipped Spread Sheet
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+
+elif (goal_message[5])[9:len(goal_message[5])-1] == &#39;Food&#39;:
+    times_green = int(time.time()) + 5*84600
+    value = datetime.datetime.fromtimestamp(times_green)
+    str_time = value.strftime(&#39;%Y-%m-%d&#39;)
+    parameters_me = {&quot;id&quot;:&quot;OrdersShipped&quot;,\
+&quot;Team Id&quot;:self.team_id, &quot;Unique Id&quot;:self.unique_id,\
+&quot;City&quot;:(goal_message[0])[10:len(goal_message[0])-1],\
+&quot;Shipped Date and Time&quot;:time_shipped,\
+&quot;Order ID&quot;:(goal_message[2])[13:len(goal_message[2])-1],\
+&quot;Item&quot;:(goal_message[5])[9:len(goal_message[5])-1],\
+&quot;Shipped Quantity&quot;:(goal_message[4])[8:len(goal_message[4])-1],\
+&quot;Cost&quot;:150, &quot;Priority&quot;:&#39;LP&#39;, &quot;Shipped Status&quot;:&#39;YES&#39;,\
+&quot;Estimated Time of Delivery&quot;: str_time}
+    # Updating the Order Shipped Spread Sheet
+    response_me = requests.get(self.url_me, params=parameters_me)
+    print response_me.content
+</code></pre></div>
+</div>
+</div>
+<h3 id="main"><code>main()</code><a class="headerlink" href="#main" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><label for="__tabbed_7_1">docstring</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>This is the main function to initiate the ros node `node_action_server_ros_iot_bridge`
+</code></pre></div>
+</div>
+<input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><label for="__tabbed_7_2">code</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code>global SUB_ONCE
+rospy.init_node(&#39;node_action_server_ros_iot_bridge&#39;)
+action_server = IotRosBridgeActionServer()
+rospy.sleep(6)
+SUB_ONCE = rospy.Subscriber(&quot;/eyrc/vb/camera_1/image_raw&quot;, Image,\
+action_server.camera_1_callback)
+rospy.Subscriber(&quot;/eyrc/vb/VsMyPsSr/spreadsheet/ordersdispatch&quot;,\
+msg_spreadsheet_1, action_server.dispatch_orders, queue_size=3)
+rospy.Subscriber(&quot;/eyrc/vb/VsMyPsSr/spreadsheet/ordershipped&quot;,\
+msg_spreadsheet_2, action_server.shipped_orders, queue_size=3)
+rospy.spin()
+</code></pre></div>
+</div>
+</div>
+                
+                  
+                
+              
+  <footer class="tx-content__footer md-typeset">
+    <a href="../insiders/" title="Material for MkDocs Insiders">
+      <hr>
+      <span class="twemoji">
+        <?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1202.000000pt" height="1314.000000pt" viewBox="0 0 1202.000000 1314.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,1314.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M7500 13129 c-443 -4 -1187 -12 -1655 -18 -467 -6 -1408 -13 -2090
+-16 -1258 -6 -1620 -14 -1935 -41 -757 -64 -1171 -244 -1420 -615 -242 -362
+-350 -887 -390 -1889 -14 -356 -12 -1667 5 -2710 25 -1573 38 -3168 32 -3985
+-9 -1120 6 -1776 48 -2170 122 -1132 532 -1509 1770 -1629 330 -33 479 -38
+1221 -43 521 -4 1109 0 1865 12 1329 22 3068 26 3374 8 1051 -61 1773 -30
+2275 97 583 148 973 434 1174 861 52 111 146 373 177 491 25 98 50 280 40 290
+-4 4 -1768 9 -3921 11 -3628 3 -3924 4 -4039 20 -603 83 -1020 287 -1408 691
+-323 334 -497 709 -557 1196 -36 288 -37 434 -34 2965 3 2313 5 2500 21 2625
+47 356 119 608 242 850 106 206 212 347 391 519 339 326 777 504 1444 588 135
+17 264 18 1875 18 1900 0 1831 2 2145 -61 667 -133 1140 -474 1400 -1009 130
+-267 203 -534 256 -935 14 -105 17 -256 21 -925 l4 -800 -3078 -1266 -3078
+-1265 0 -300 c0 -309 7 -391 46 -549 84 -334 397 -617 789 -711 72 -18 245
+-19 3781 -21 l3706 -3 9 902 c11 1052 10 1172 -3 4578 l-10 2585 -25 115 c-38
+172 -78 281 -192 521 -119 250 -177 341 -296 459 -237 237 -586 380 -1131 464
+-569 87 -1191 108 -2849 95z"/>
+<path d="M4845 9633 c-203 -18 -454 -82 -604 -153 -123 -59 -204 -116 -288
+-201 -173 -176 -262 -373 -292 -642 -13 -111 -16 -2067 -3 -2067 4 0 1022 420
+2262 933 l2255 933 3 108 c5 197 -38 426 -105 561 -57 114 -176 249 -283 322
+-150 102 -366 174 -610 203 -78 9 -2235 12 -2335 3z"/>
+</g>
+</svg>
+      </span>
+      <span class="twemoji">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </span>
+      <span class="twemoji tx-heart">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 20.408c-.492.308-.903.546-1.192.709-.153.086-.308.17-.463.252h-.002a.75.75 0 01-.686 0 16.709 16.709 0 01-.465-.252 31.147 31.147 0 01-4.803-3.34C3.8 15.572 1 12.331 1 8.513 1 5.052 3.829 2.5 6.736 2.5 9.03 2.5 10.881 3.726 12 5.605 13.12 3.726 14.97 2.5 17.264 2.5 20.17 2.5 23 5.052 23 8.514c0 3.818-2.801 7.06-5.389 9.262A31.146 31.146 0 0114 20.408z"/></svg>
+      </span>
+      <hr>
+    </a>
+  </footer>
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../task5/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                pkg_task5
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../msg/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                msg file
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+        
+        
+      
+      <a href="https://github.com/Vimal9900" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/worker/search.3f4c5856.min.js"}</script>
+    
+    
+  
+      <script src="../assets/javascripts/vendor.00ecb175.min.js"></script>
+      <script src="../assets/javascripts/bundle.9a5a6e7c.min.js"></script>
+      
+    
+  <script src="../overrides/assets/javascripts/bundle.e5217812.min.js"></script>
+
+  </body>
+</html>
